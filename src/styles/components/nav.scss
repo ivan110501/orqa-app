@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    position: relative;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    color: var(--color-gray-700);
+    &:hover {
+      &::after {
+        left: 0;
+        right: 0;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      right: 50%;
+      height: 2px;
+      background-color: var(--color-gray-700);
+      transition: all 350ms ease-in-out;
+    }
+  }
+}

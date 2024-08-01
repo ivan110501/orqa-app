@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-black);
+  display: block;
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

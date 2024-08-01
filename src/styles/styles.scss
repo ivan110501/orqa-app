@@ -1,0 +1,59 @@
+:root {
+  //border
+  --border-rounded: 0.5rem;
+  --border-circle: 1000rem;
+
+  //colors
+  --color-white: #fff;
+  --color-black: #222;
+
+  --color-purple-400: #8e44ad;
+  --color-purple-300: #9b59b6;
+
+  --color-yellow-400: #f1c40f;
+  --color-yellow-500: #f39c12;
+
+  --color-blue-300: #708dec;
+  --color-blue-400: #3498db;
+  --color-blue-500: #2980b9;
+
+  --color-red-400: #db3131;
+  --color-red-500: #bd1d1d;
+
+  --color-gray-100: #ecf0f1;
+  --color-gray-200: #bdc3c7;
+  --color-gray-300: #95a5a6;
+  --color-gray-400: #7f8c8d;
+  --color-gray-600: #34495e;
+  --color-gray-700: #2c3e50;
+  --color-gray-800: #25323e;
+  --color-gray-900: #1e262d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+//IMPORTS
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+//components
+@import "./components/button.scss";
+@import "./components/diagram.scss";
+@import "./components/grid.scss";
+@import "./components/header.scss";
+@import "./components/input.scss";
+@import "./components/layout.scss";
+@import "./components/link.scss";
+@import "./components/nav.scss";
+@import "./components/home.scss";
+//utils
+@import "./utils/display.scss";
+@import "./utils/flex.scss";
+@import "./utils/margins.scss";

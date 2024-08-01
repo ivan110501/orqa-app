@@ -1,0 +1,137 @@
+.org-chart {
+  transform: scale(1);
+  transform-origin: top left;
+}
+
+.org-chart-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  max-width: 160px;
+}
+
+.org-chart-node img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.org-chart-node .name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.org-chart-node .position {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.card {
+  padding: 0;
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  height: 84vh;
+  overflow: auto;
+  position: relative;
+}
+
+.card::-webkit-scrollbar {
+  width: 12px;
+}
+
+.card::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+svg path,
+svg line {
+  stroke-width: 2px;
+  stroke: #666;
+  fill: none;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1rem;
+  color: #ff5722;
+  margin-top: 20px;
+}
+
+.org-chart-node:hover {
+  background-color: #e9ecef;
+  box-shadow: none;
+}
+
+.p-organizationchart .p-organizationchart-node-content {
+  border: 1px solid #dcdcdc;
+  background-color: #f9f9f9;
+}
+
+.p-organizationchart .p-organizationchart-line-down {
+  .controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .org-chart-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transform-origin: top left;
+  }
+
+  border-left: 2px solid #666;
+}
+
+.p-organizationchart .p-organizationchart-line-right,
+.p-organizationchart .p-organizationchart-line-left {
+  border-top: 2px solid #666;
+}
+.zoom-button {
+  background-color: #adadad;
+  color: white;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  width: 3rem;
+  margin: 0.25rem;
+}
+
+.zoom-button:hover {
+  background-color: #0056b3;
+}

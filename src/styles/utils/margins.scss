@@ -1,0 +1,23 @@
+.m {
+  &b {
+    &-2 {
+      margin-bottom: calc(2 * 0.25rem);
+    }
+    &-4 {
+      margin-bottom: calc(4 * 0.25rem);
+    }
+    &-8 {
+      margin-bottom: calc(8 * 0.25rem);
+    }
+  }
+  &t {
+    &-4 {
+      margin-top: calc(4 * 0.25rem);
+    }
+  }
+  &r {
+    &-2 {
+      margin-right: calc(2 * 0.25rem);
+    }
+  }
+}

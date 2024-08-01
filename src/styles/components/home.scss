@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(242, 246, 248);
+}
+.content {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.employee {
+  &--img {
+    border-radius: 20%;
+    margin: 0.25rem;
+  }
+}
+
+tr {
+  height: 5vh;
+  background-color: white;
+}
